@@ -1,0 +1,18 @@
+--cpu Cortex-M0
+"shiftregister\startup_stm32f030x6.o"
+"shiftregister\74hc595.o"
+"shiftregister\main.o"
+"shiftregister\stm32f0xx_it.o"
+"shiftregister\stm32f0xx_ll_gpio.o"
+"shiftregister\stm32f0xx_ll_rtc.o"
+"shiftregister\stm32f0xx_ll_rcc.o"
+"shiftregister\stm32f0xx_ll_utils.o"
+"shiftregister\stm32f0xx_ll_exti.o"
+"shiftregister\stm32f0xx_ll_spi.o"
+"shiftregister\stm32f0xx_ll_dma.o"
+"shiftregister\stm32f0xx_ll_pwr.o"
+"shiftregister\system_stm32f0xx.o"
+--library_type=microlib --strict --scatter "shiftRegister\shiftRegister.sct"
+--summary_stderr --info summarysizes --map --load_addr_map_info --xref --callgraph --symbols
+--info sizes --info totals --info unused --info veneers
+--list "shiftRegister.map" -o shiftRegister\shiftRegister.axf
