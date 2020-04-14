@@ -239,10 +239,10 @@ static void MX_RTC_Init(void)
   */
   RTC_InitStruct.HourFormat = LL_RTC_HOURFORMAT_24HOUR;
   RTC_InitStruct.AsynchPrescaler = 99;
-  RTC_InitStruct.SynchPrescaler = 399;
+  RTC_InitStruct.SynchPrescaler = 2499;
   LL_RTC_Init(RTC, &RTC_InitStruct);
   LL_RTC_SetAsynchPrescaler(RTC, 99);
-  LL_RTC_SetSynchPrescaler(RTC, 399);
+  LL_RTC_SetSynchPrescaler(RTC, 2499);
   /* USER CODE BEGIN RTC_Init 2 */
 
   /* USER CODE END RTC_Init 2 */
